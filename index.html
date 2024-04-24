@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="passwordGenerator.css">
+</head>
+<body>
+    <!-- <h1>Password Generator</h1>
+    <form action="">
+        <label for="">LowerCase</label><br>
+        <input type="number" placeholder="Enter no. of LowerCase Letters" id="lower" required>
+        <br>
+        <label for="">UpperCase</label>
+        <input type="number" placeholder="Enter no. of UpperCase Letters" id="upper">
+        <br>
+        <label for="">Numbers</label>
+        <input type="number" placeholder="Enter no. of Numbers" id="num">
+        <br>
+        <label for="">Special Characters</label>
+        <input type="number" placeholder="Enter no. of Special Characters" id="spcl">
+        <br>
+        <input type="submit" value="Submit" id="submit">
+        <h2>OR</h2>
+        <input type="submit" value="Generate Randomly" id="genRandom">
+    </form>
+    <h1 id="pw"></h1> -->
+
+    <div class="container">
+        <div class="form_area">
+            <p class="title">Password Generator</p>
+            <form action="">
+                <div class="form_group">
+                    <label class="sub_title" for="lower">LowerCase</label>
+                    <input placeholder="Enter no. of lowercase letters" class="form_style" type="number" id="lower" min="1" max="30">
+                </div>
+                <div class="form_group">
+                    <label class="sub_title" for="upper">UpperCase</label>
+                    <input placeholder="Enter no. of uppercase letters" class="form_style" type="number" id="upper" min="1" max="30">
+                </div>
+                <div class="form_group">
+                    <label class="sub_title" for="num">Number</label>
+                    <input placeholder="Enter no. of number count" class="form_style" type="number" id="num" min="1" max="30">
+                </div>
+                <div class="form_group">
+                    <label class="sub_title" for="spcl">Special Characters</label>
+                    <input placeholder="Enter no. of special characters includes" class="form_style" type="number" id="spcl" min="1" max="30">
+                </div>
+                <div>
+                    <button class="btn" id="submit">Generate</button>
+                    <p>OR</p>
+                    <button class="btn" id="genRandom" style="margin-top: 0;">Generate Randomly</button>
+                </div>
+            </form>
+        </div>
+        <div class="text" id="passwordIsHere">
+            <h1>Your Password Is Here</h1>
+            <div class="passwordCopy">
+                <h5 id="pw">hii</h5>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16" id="copy">
+                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"/>
+                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"/>
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16" id="copied">
+                    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <script src="passwordGenerator.js"></script>
+</body>
+</html>
